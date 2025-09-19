@@ -19,6 +19,24 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        // Brand colors
+        brand: {
+          pink: "hsl(var(--brand-pink))",
+          orange: "hsl(var(--brand-orange))",
+          white: "hsl(var(--brand-white))",
+        },
+        
+        // Glass colors
+        glass: {
+          background: "hsl(var(--glass-background))",
+          border: {
+            inner: "hsl(var(--glass-border-inner))",
+            outer: "hsl(var(--glass-border-outer))",
+          },
+          shadow: "hsl(var(--glass-shadow))",
+        },
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -57,6 +75,19 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontFamily: {
+        hubot: ['Hubot Sans', 'Inter', 'system-ui', 'sans-serif'],
+        work: ['Work Sans', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        xs: ['12px', { lineHeight: '16px' }],
+        sm: ['14px', { lineHeight: '20px' }],
+        base: ['16px', { lineHeight: '24px' }],
+        lg: ['20px', { lineHeight: '28px' }],
+        xl: ['28px', { lineHeight: '36px' }],
+        '2xl': ['40px', { lineHeight: '48px' }],
+        '3xl': ['56px', { lineHeight: '64px' }],
       },
       borderRadius: {
         lg: "var(--radius)",
