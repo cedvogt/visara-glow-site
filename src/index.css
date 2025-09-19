@@ -115,14 +115,15 @@
     background: 
       /* Film grain/noise overlay */
       radial-gradient(circle at 25% 25%, transparent 0%, transparent 50%, hsla(0, 0%, 0%, 0.01) 50.1%),
-      /* Softer gradient layers with more white dominance */
-      radial-gradient(ellipse 120% 80% at 0% 0%, hsla(318, 95%, 85%, 0.3) 0%, transparent 70%),
-      radial-gradient(ellipse 100% 70% at 50% 0%, hsl(var(--brand-white)) 0%, transparent 80%),
-      radial-gradient(ellipse 120% 80% at 100% 100%, hsla(26, 100%, 63%, 0.25) 0%, transparent 70%),
-      radial-gradient(ellipse 80% 60% at 30% 50%, hsl(var(--brand-white)) 0%, transparent 60%),
-      radial-gradient(ellipse 80% 60% at 70% 50%, hsl(var(--brand-white)) 0%, transparent 60%),
-      linear-gradient(135deg, hsla(318, 95%, 85%, 0.1) 0%, hsl(var(--brand-white)) 30%, hsla(26, 100%, 63%, 0.1) 100%);
-    background-size: 150px 150px, 60% 40%, 80% 60%, 60% 40%, 50% 40%, 50% 40%, 100% 100%;
+      /* Pink blob - small area top-left */
+      radial-gradient(circle 25% at 15% 20%, hsla(318, 95%, 85%, 0.6) 0%, hsla(318, 95%, 85%, 0.3) 30%, transparent 60%),
+      /* Orange blob - small area bottom-right */
+      radial-gradient(circle 30% at 85% 80%, hsla(26, 100%, 63%, 0.5) 0%, hsla(26, 100%, 63%, 0.2) 35%, transparent 65%),
+      /* Large white/cream base covering most of the area */
+      radial-gradient(ellipse 90% 80% at 50% 45%, hsl(var(--brand-white)) 0%, hsla(0, 0%, 98%, 0.9) 70%, transparent 100%),
+      /* Subtle overall tint */
+      linear-gradient(135deg, hsla(318, 50%, 95%, 0.2) 0%, hsla(0, 0%, 100%, 1) 40%, hsla(26, 60%, 95%, 0.2) 100%);
+    background-size: 150px 150px, 50% 50%, 60% 60%, 100% 100%, 100% 100%;
     background-attachment: fixed;
     min-height: 100vh;
   }
