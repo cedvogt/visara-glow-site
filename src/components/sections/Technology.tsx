@@ -118,7 +118,7 @@ const Technology = () => {
                             {/* Connector Arrow */}
                             {index < workflowSteps.length - 1 && (
                                 <div
-                                    className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30"/>
+                                    className="hidden md:block absolute top-1/2 -right-5 w-4 h-0.5 bg-primary"/>
                             )}
                         </div>
                     ))}

@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <Button
                         size="lg"
-                        className="font-work font-medium bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3"
+                        className="font-work font-medium bg-primary hover:bg-secondary text-primary-foreground px-8 py-3"
                     >
                         <Mail className="w-5 h-5 mr-2"/>
                         Contact Us

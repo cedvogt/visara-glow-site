@@ -152,7 +152,7 @@ const Contact = () => {
                         <Button
                             type="submit"
                             disabled={isSubmitting}
-                            className="w-full font-work font-medium bg-primary hover:bg-primary/90 text-primary-foreground"
+                            className="w-full font-work font-medium bg-primary hover:bg-secondary text-primary-foreground"
                         >
                             {isSubmitting ? (
                                 <>

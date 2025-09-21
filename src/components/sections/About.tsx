@@ -27,8 +27,13 @@ const About = () => {
                 <h2 className="font-hubot font-bold text-xl md:text-2xl text-foreground mb-4">
                     About Visara
                 </h2>
-                <p className="font-work text-lg text-foreground/80 max-w-2xl mx-auto">
-                    TODO: Brief company overview and mission statement
+                <p className="font-work text-lg text-foreground/80 max-w-4xl mx-auto">
+                    {/*TODO: translation */}
+                    We are building the next generation of AI-powered diagnostic tools to support breast cancer care.
+                    Our web-based platform analyzes mammograms, predicts BI-RADS scores, estimates tumor aggressiveness,
+                    and generates structured reports—reducing reporting time, increasing consistency, and enabling earlier,
+                    more personalized treatment decisions. Our mission is to harness trustworthy AI to help clinicians
+                    detect cancer earlier, improve diagnostic accuracy, and enhance survival and quality of life for patients.
                 </p>
             </div>
 
@@ -39,8 +44,10 @@ const About = () => {
                         Our Mission
                     </h3>
                     <p className="font-work text-foreground/80 leading-relaxed">
-                        TODO: Detailed mission statement about transforming healthcare through innovative
-                        medical technology solutions. Focus on patient outcomes, safety, and regulatory compliance.
+                        {/*TODO: Translation */}
+                        Our mission is to empower clinicians with trustworthy AI that enhances accuracy, consistency,
+                        and speed in breast cancer diagnostics, enabling earlier detection, more personalized treatments,
+                        and ultimately better outcomes and quality of life for patients.
                     </p>
                 </div>
 
@@ -49,8 +56,17 @@ const About = () => {
                         Our Story
                     </h3>
                     <p className="font-work text-foreground/80 leading-relaxed">
-                        TODO: Company founding story, key milestones, and vision for the future.
-                        Highlight expertise in medical device development and regulatory pathways.
+                        {/*TODO: Translation */}
+                        Visara was founded out of research at Lucerne University of Applied Sciences and Arts, where our
+                        team developed AI models for mammogram analysis and automated reporting. What began as three
+                        master theses grew into a startup project in 2025 with the aim of transforming breast cancer
+                        diagnostics.
+                        <br/><br/>
+                        Key milestones include the first web-based prototype with BI-RADS scoring and aggressiveness
+                        prediction, clinical validation with Luzerner Kantonsspital, and preparation for Swissmedic
+                        Class IIa/IIb certification. Our vision is to bring trustworthy AI into everyday clinical
+                        workflows—starting with breast cancer and expanding into other imaging domains—to improve
+                        accuracy, consistency, and patient outcomes.
                     </p>
                 </div>
             </div>
