@@ -5,19 +5,19 @@ const Footer = () => {
     company: [
       { label: 'About Us', href: '#about' },
       { label: 'Technology', href: '#technology' },
-      { label: 'Careers', href: '#careers' },
+      // { label: 'Careers', href: '#careers' },
       { label: 'Contact', href: '#contact' }
     ],
     legal: [
       { label: 'Privacy Policy', href: '/privacy' },
       { label: 'Terms of Service', href: '/terms' },
-      { label: 'Cookie Policy', href: '/cookies' },
-      { label: 'Data Protection', href: '/data-protection' }
+      // { label: 'Cookie Policy', href: '/cookies' },
+      // { label: 'Data Protection', href: '/data-protection' }
     ],
     resources: [
-      { label: 'Resources', href: '#resources' },
-      { label: 'Documentation', href: '/docs' },
-      { label: 'Support', href: '/support' },
+      // { label: 'Resources', href: '#resources' },
+      // { label: 'Documentation', href: '/docs' },
+      // { label: 'Support', href: '/support' },
       { label: 'Downloads', href: '/downloads' }
     ]
   };
