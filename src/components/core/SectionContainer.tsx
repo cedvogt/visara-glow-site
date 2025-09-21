@@ -9,7 +9,11 @@ interface SectionContainerProps {
 
 const SectionContainer = ({ id, className = '', children }: SectionContainerProps) => {
   return (
-    <section id={id} className={`py-12 ${className}`}>
+    <section
+      id={id}
+      className={`py-12 ${className}`}
+      style={{ scrollMarginTop: 'calc(var(--nav-h, 7rem) - var(--nav-offset, 0.5rem))' }}
+    >
       <div className="container mx-auto px-6">
         <div className="glass-panel p-12 md:p-16">{children}</div>
       </div>

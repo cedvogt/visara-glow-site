@@ -161,5 +161,6 @@
     /* Smooth scroll */
     html {
         scroll-behavior: smooth;
+        scroll-padding-top: calc(2.5rem);
     }
 }

@@ -5,12 +5,12 @@ import SectionContainer from "@/components/core/SectionContainer.tsx";
 const Hero = () => {
     return (
         <div className="mt-[160px]">
-            <SectionContainer id="hero">
-                <h1 className="font-hubot font-bold text-3xl md:text-2xl lg:text-3xl text-foreground mb-6 leading-tight">
-                    Revolutionizing Healthcare Through
+            <SectionContainer id="home">
+                <h1 className="font-hubot font-bold text-3xl md:text-2xl lg:text-3xl text-foreground mb-6 leading-tight text-center max-w-3xl mx-auto flex flex-col items-center">
+                    <span className="whitespace-nowrap">Revolutionizing Healthcare Through</span>
                     <span className="block text-primary mt-2">
-              Innovative Technology
-            </span>
+                      Innovative Technology
+                    </span>
                 </h1>
 
                 <p className="font-work text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">
