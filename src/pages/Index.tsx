@@ -18,9 +18,9 @@ const Index = () => {
         <About />
         <Technology />
         <Product />
-        <Compliance />
-        <Resources />
-        <Careers />
+        {/*<Compliance />*/}
+        {/*<Resources />*/}
+        {/*<Careers />*/}
         <Contact />
       </main>
       <Footer />

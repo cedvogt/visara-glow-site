@@ -1,27 +1,27 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
+const NAV_ITEMS = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'technology', label: 'Technology' },
+  { id: 'product', label: 'Product' },
+  // { id: 'compliance', label: 'Compliance' },
+  // { id: 'resources', label: 'Resources' },
+  // { id: 'careers', label: 'Careers' },
+  { id: 'contact', label: 'Contact' },
+];
+
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'technology', label: 'Technology' },
-    { id: 'product', label: 'Product' },
-    { id: 'compliance', label: 'Compliance' },
-    { id: 'resources', label: 'Resources' },
-    { id: 'careers', label: 'Careers' },
-    { id: 'contact', label: 'Contact' },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
       
       // Update active section based on scroll position
-      const sections = navItems.map(item => document.getElementById(item.id));
+      const sections = NAV_ITEMS.map(item => document.getElementById(item.id));
       const currentSection = sections.find(section => {
         if (!section) return false;
         const rect = section.getBoundingClientRect();
@@ -46,24 +46,31 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'py-2' : 'py-4'
+      isScrolled ? 'py-2' : 'py-6'
     }`}>
       <div className="container mx-auto px-6">
-        <div className="glass-panel flex items-center justify-between px-6 py-3">
-          {/* Logo */}
-          <div className="font-hubot font-bold text-xl text-foreground">
-            Visara
+        <div className="glass-panel flex items-center justify-between px-4">
+          <div className="flex items-center">
+            <img
+              src="/images/visara_logo.png"
+              alt="Visara logo"
+              className="w-24 h-24"
+              loading="lazy"
+            />
+            <span className="font-hubot font-bold text-2xl text-foreground">
+              Visara
+            </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <Button
                 key={item.id}
                 variant="ghost"
                 size="sm"
                 onClick={() => scrollToSection(item.id)}
-                className={`font-work transition-all ${
+                className={`font-work text-md transition-all ${
                   activeSection === item.id
                     ? 'bg-primary/20 text-primary font-medium'
                     : 'text-foreground/80 hover:text-foreground hover:bg-white/20'
