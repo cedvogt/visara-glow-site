@@ -100,7 +100,7 @@ const Navigation = () => {
 				<div className="glass-panel flex items-center justify-between px-4">
 					<div className="flex items-center">
 						<img
-							src="/images/visara_logo.png"
+							src="/images/logo/android-chrome-512x512.png"
 							alt="Visara logo"
 							className="w-24 h-24"
 							loading="lazy"
